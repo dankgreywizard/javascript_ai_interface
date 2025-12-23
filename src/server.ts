@@ -1,9 +1,9 @@
 import { createServer } from "http";
 import express, {Express, Request, Response } from "express";
-import { ollamaResponse } from "./ollama";
+import { ollamaResponse } from "./services/ollamaService";
 import cors from "cors";
 import httpProxy from "http-proxy";
-import GitService from './gitService';
+import GitService from './services/gitService';
 import ollama from 'ollama';
 
 const port = process.env.PORT ? Number(process.env.PORT) : 5000;
